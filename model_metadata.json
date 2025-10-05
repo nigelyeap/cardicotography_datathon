@@ -1,0 +1,57 @@
+{
+    "model_type": "RandomForestClassifier",
+    "preprocessing": "RobustScaler + SMOTE-Tomek",
+    "features": [
+        "LB",
+        "AC",
+        "MSTV",
+        "ASTV",
+        "DS",
+        "DP",
+        "DR",
+        "DL",
+        "Variance",
+        "Tendency"
+    ],
+    "target": "NSP",
+    "hyperparameters": {
+        "n_estimators": 600,
+        "criterion": "gini",
+        "max_features": "log2",
+        "max_depth": 30,
+        "min_samples_split": 20,
+        "random_state": 42
+    },
+    "training_date": "2025-10-05 21:38:20",
+    "training_duration_seconds": 54.340804,
+    "data_split": {
+        "train_samples": 1480,
+        "validation_samples": 424,
+        "test_samples": 212,
+        "resampled_train_samples": 3433
+    },
+    "performance": {
+        "train": {
+            "accuracy": 0.9527027027027027,
+            "precision": 0.9564169801030301,
+            "recall": 0.9527027027027027,
+            "f1_weighted": 0.9538812227072021,
+            "f1_macro": 0.9187284608423871
+        },
+        "validation": {
+            "accuracy": 0.9080188679245284,
+            "precision": 0.9117622009217292,
+            "recall": 0.9080188679245284,
+            "f1_weighted": 0.9090361687161087,
+            "f1_macro": 0.831685610150828
+        },
+        "test": {
+            "accuracy": 0.9056603773584906,
+            "precision": 0.9066095260009204,
+            "recall": 0.9056603773584906,
+            "f1_weighted": 0.9059109033120739,
+            "f1_macro": 0.8248813523169627
+        }
+    },
+    "random_state": 42
+}
