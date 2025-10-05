@@ -2,6 +2,7 @@
 
 Team TM-207: Alyssa, Nigel, Louis
 
+Before we begin, we would like to emphasise that most of our accurate code can be found under data_exploration/mainanalysis, as we were un
 ## Overview
 
 This project predicts fetal health status (Normal, Suspect, or Pathological) from CTG data using a Random Forest model with SMOTE-Tomek resampling. Achieved 92% test accuracy.
